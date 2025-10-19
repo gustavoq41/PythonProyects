@@ -1,0 +1,16 @@
+# pyproject.toml
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = "\\.pyi?$"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+select = ["E", "F", "I", "UP", "B", "S", "W"]
+ignore = ["E203"]
+fix = true
+
+[tool.ruff.isort]
+known-first-party = ["src"]
+combine-as-imports = true
